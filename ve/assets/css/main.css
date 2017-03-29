@@ -3950,9 +3950,9 @@
 
 		background-attachment: fixed;
 		background-image: url("images/background2.jpg");
-		background-position: bottom right;
+		background-position: center;
 		background-repeat: no-repeat;
-		background-size: cover;
+		background-size: contain;
 	}
 
     #sidebar .logo{
