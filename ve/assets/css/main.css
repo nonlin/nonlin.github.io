@@ -87,6 +87,7 @@
         padding-left: 30px;
         padding-right: 10px;
         border-radius: 10px;
+        font-size: 120%
     }
        * .MainContactInfo li, p, h3, h2{
            text-align: left;
@@ -3813,7 +3814,7 @@
 			border: 0;
 			color: rgba(255, 255, 255, 0.35);
 			display: block;
-			font-size: 0.6em;
+			font-size: 0.7em;
 			font-weight: bold;
 			letter-spacing: 0.25em;
 			line-height: 1.75;
@@ -3956,12 +3957,12 @@
 	}
 
     #sidebar .logo{
-            width: 100%; /* you can use % */
+            width: 130%; /* you can use % */
             height: auto;
             border-radius: 10px;
             opacity: 0.9;
             position: absolute;
-            left: -10%;
+            left: -15%;
 
     }
 
