@@ -25,36 +25,37 @@
     li { margin: 4px 0; }
     a { color: #0b57d0; text-decoration: none; }
     a:hover, a:focus { text-decoration: underline; }
-    .muted { color: #444; }
   </style>
 </head>
 <body>
   <main>
-    <h1>George Erfesoglou - Director of Software | Unity/Unreal SDKs</h1>
+    <h1>George Erfesoglou - Software Engineering | Engine Integrations | Connected Devices (BLE/Serial)</h1>
 
     <p>
-      Hands-on platform and engine-integration engineer building developer-facing SDKs and plugins for real-time 3D applications.
-      Work centers on Unity and Unreal native/managed interop, BLE and serial transports, and reliability-focused device messaging pipelines.
+      Platform and engine-integration engineer building developer-facing SDKs and plugins for real-time 3D applications.
+      Focus areas are Unity and Unreal native interop, cross-platform BLE/serial transports, and reliability-focused device messaging.
     </p>
 
     <h2>Core Expertise</h2>
     <ul>
-      <li>Unity (C#) and Unreal Engine (UE4/UE5, C++) integration for connected hardware workflows</li>
-      <li>Cross-platform development across Windows, Android, iOS, macOS, and Linux (Raspberry Pi)</li>
-      <li>Interop and native boundaries: P/Invoke, C ABI design, Win32 serial overlapped I/O, WinRT, CoreBluetooth</li>
-      <li>Networking and protocols: BLE GATT, serial protocols, WebSockets, UDP logging/telemetry</li>
-      <li>Reliability engineering: framing/parsing, response correlation, timeouts/retries, lifecycle-safe teardown and diagnostics</li>
+      <li>Unity (C#/.NET) and Unreal Engine (UE4/UE5, C++/Blueprint) SDK/plugin development for connected devices</li>
+      <li>Cross-platform delivery across Win64, Android, iOS, macOS, and Linux (Raspberry Pi)</li>
+      <li>Interop and native systems: P/Invoke, C ABI design, Win32 serial overlapped I/O, WinRT, CoreBluetooth, JNI</li>
+      <li>Transport and lifecycle architecture: scan/discovery, permission gating, connect/disconnect, reconnection, teardown safety</li>
+      <li>Messaging and diagnostics: BLE GATT, serial protocols, WebSockets, framing/parsing, retries/timeouts, UDP telemetry</li>
+      <li>Engine tooling and packaging: Slate/Editor tooling and Unreal Build.cs packaging wiring</li>
     </ul>
 
     <h2>Selected Work</h2>
     <ul>
-      <li>Owned end-to-end Unity and Unreal integrations for a BLE-controlled hardware device from transport layers to release builds.</li>
-      <li>Architected a unified SDK wrapper with shared C# APIs and platform-specific backends behind compile-time guards.</li>
+      <li>Owned end-to-end Unity and Unreal integrations for a BLE-controlled hardware device from transport layers and SDK APIs to release-ready builds.</li>
+      <li>Shipped a cross-platform Unreal plugin across Win64, macOS, Android, and iOS with native BLE backends and build/packaging wiring.</li>
+      <li>Architected a unified cross-platform SDK exposed through Unity (C#) and Unreal (C++) bindings with compile-time guarded backends.</li>
       <li>Built OVRSerialWin.dll in C++ and integrated it into Unity via P/Invoke for IL2CPP/.NET Standard compatibility.</li>
-      <li>Implemented hardware-in-the-loop validation across platforms with tracing to reproduce and resolve field issues.</li>
-      <li>Built a Fabric 1.20.4 Minecraft mod and WebSocket bridge for real-time event streaming and scent orchestration.</li>
-      <li>Developed UE4 simulators at NOV to validate industrial control logic before on-equipment testing.</li>
-      <li>Published <a href="https://www.fab.com/de/listings/2769d493-c45d-40a4-8c8f-0a1fa9dc7b90">Physical Boids</a> (Fab / Unreal Marketplace): physics-based flocking AI plugin for Unreal Engine.</li>
+      <li>Engineered lifecycle reliability and diagnostics for scan/connect/reconnect and thread-safe callback dispatch.</li>
+      <li>Developed a UE4 simulation library of 10+ NOV equipment/components for pre-commissioning control-logic validation.</li>
+      <li>Built a Fabric 1.20.4 mod with a WebSocket bridge for gameplay-driven scent/visualization orchestration.</li>
+      <li>Published <a href="https://www.fab.com/de/listings/2769d493-c45d-40a4-8c8f-0a1fa9dc7b90">Physical Boids</a> on Fab/Unreal Marketplace.</li>
     </ul>
 
     <h2>Selected Demos</h2>
@@ -72,7 +73,7 @@
     <h2>Links</h2>
     <ul>
       <li>GitHub: <a href="https://github.com/nonlin">github.com/nonlin</a></li>
-      <li>Resume PDF: Not provided in source material</li>
+      <li>Resume PDF: <a href="George%20Erfesoglou%20Resume.pdf">George Erfesoglou Resume.pdf</a></li>
     </ul>
   </main>
 </body>
