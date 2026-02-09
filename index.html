@@ -1,66 +1,77 @@
-﻿<!DOCTYPE html>
-<html>
+﻿<!doctype html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>George Erfesoglou's Online Space</title>
-    <link rel="stylesheet" href="TemplateData/style.css">
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>George Erfesoglou - Portfolio Index</title>
+  <style>
+    :root { color-scheme: light; }
+    body {
+      margin: 0;
+      background: #fff;
+      color: #111;
+      font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    main {
+      max-width: 900px;
+      margin: 32px auto;
+      padding: 0 20px;
+    }
+    h1, h2 { margin: 0 0 10px; line-height: 1.25; }
+    h1 { font-size: 24px; font-weight: 600; }
+    h2 { font-size: 16px; font-weight: 600; margin-top: 20px; }
+    p { margin: 0 0 10px; }
+    ul { margin: 0; padding-left: 18px; }
+    li { margin: 4px 0; }
+    a { color: #0b57d0; text-decoration: none; }
+    a:hover, a:focus { text-decoration: underline; }
+  </style>
 </head>
 <body>
+  <main>
+    <h1>George Erfesoglou - Director of Software | Unity/Unreal SDKs</h1>
 
-    <div class="header">
-        <h1>George Erfesoglou</h1>
-    </div>
+    <p>
+      Hands-on platform and engine-integration engineer building developer-facing SDKs and plugins for real-time 3D applications.
+      Work centers on Unity and Unreal native/managed interop, BLE and serial transports, and reliability-focused device messaging pipelines.
+    </p>
 
-    <div class="row">
+    <h2>Core Expertise</h2>
+    <ul>
+      <li>Unity (C#) and Unreal Engine (UE4/UE5, C++) integration for connected hardware workflows</li>
+      <li>Cross-platform development across Windows, Android, iOS, macOS, and Linux (Raspberry Pi)</li>
+      <li>Interop and native boundaries: P/Invoke, C ABI design, Win32 serial overlapped I/O, WinRT, CoreBluetooth</li>
+      <li>Networking and protocols: BLE GATT, serial protocols, WebSockets, UDP logging/telemetry</li>
+      <li>Reliability engineering: framing/parsing, response correlation, timeouts/retries, lifecycle-safe teardown and diagnostics</li>
+    </ul>
 
-        <div class="col-3 menu">
-            <ul>
-                <li>About Me</li>
-                <li>Projects</li>
-                <li>Contact</li>
-                <li>GitHub</li>
-            </ul>
-        </div>
+    <h2>Selected Work</h2>
+    <ul>
+      <li>Owned end-to-end Unity and Unreal integrations for a BLE-controlled hardware device from transport layers to release builds.</li>
+      <li>Architected a unified SDK wrapper with shared C# APIs and platform-specific backends behind compile-time guards.</li>
+      <li>Built OVRSerialWin.dll in C++ and integrated it into Unity via P/Invoke for IL2CPP/.NET Standard compatibility.</li>
+      <li>Implemented hardware-in-the-loop validation across platforms with tracing to reproduce and resolve field issues.</li>
+      <li>Built a Fabric 1.20.4 Minecraft mod and WebSocket bridge for real-time event streaming and scent orchestration.</li>
+      <li>Developed UE4 simulators at NOV to validate industrial control logic before on-equipment testing.</li>
+    </ul>
 
-        <div class="col-9">
-            <h1>Hello World!</h1>
-            <p>Greetings outsiders! Welcome to my space on the net.</p>
-            <p>My name is George and I am a software developer with a B.S in Computer Science.</p>
-            <p>My passion for coding is strong and I'm always on the lookout for exicting new projects to dive into.</p>
-        </div>
-    </div>
- 
-    <div class="Project1" id="first"
-         data-center-top="opacity:0;padding: 20%; "
-         data-top-top="opacity:1; padding: 0%; ">
-        <div class="col-md-7 text">
-            <h2 class="featurette-heading">One Night Ultiamte Werewolf Desktop Timer Application<span class="text-muted"> - Offical for PC/Mac/Web</span></h2>
-            <p class="lead">The popular strategy card game by Bezeir Games includes a mobile companion app that I have now extended to PC. Made in C# using Unity 5.</p>
-        </div>
-        <div class="col-md-5 image">
-            <a style="color: black;" href="http://onenightwerewolf.com">One Night Werewolf Desktop Companion Application</a>
-        </div>
-    </div>
+    <h2>Selected Demos</h2>
+    <ul>
+      <li><a href="https://github.com/nonlin">https://github.com/nonlin</a></li>
+    </ul>
 
-    <div class="Project2" id="second"
-         data-center-top="opacity:0;padding: 20%; "
-         data-top-top="opacity:1; padding: 0%;">
-        <div class="col-md-7 text">
-            <h2 class="featurette-heading">Keplie5<span class="text-muted"> Unity</span></h2>
-            <p class="lead">A generic multiplayer first person shooter made in Unity 5 using Photon Unity Networking coded in C#.</p>
-        </div>
-        <div class="col-md-5 image">
-            <a style="color: black;" href="https://github.com/nonlin/Kelpie5" class="button" > 
-                GitHub    
-            </a>
-        </div>
-    </div>
+    <h2>Recognition</h2>
+    <ul>
+      <li>AWE 2022 (Auggie Awards): Best in Show VR for a scent-enabled VR demo.</li>
+      <li>Credited in Unreal Engine 4.21 release notes for upstream fixes.</li>
+    </ul>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-    <script src="js/skrollr.js"></script>
-    <script src="js/_main.js"></script>
-
+    <h2>Links</h2>
+    <ul>
+      <li>GitHub: <a href="https://github.com/nonlin">github.com/nonlin</a></li>
+      <li>Resume PDF: Not provided in source material</li>
+      <li>Video playlist: Not provided in source material</li>
+    </ul>
+  </main>
 </body>
 </html>
