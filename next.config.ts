@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
+const isGitHubPagesBuild = process.env.GITHUB_PAGES === "true";
+
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: isGitHubPagesBuild ? "export" : undefined,
+  images: isGitHubPagesBuild ? { unoptimized: true } : undefined,
 };
 
 export default nextConfig;

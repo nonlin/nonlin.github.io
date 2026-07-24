@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from "next";
 import { Fraunces, Work_Sans } from "next/font/google";
-import { headers } from "next/headers";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -18,22 +17,12 @@ const workSans = Work_Sans({
 const title = "George Erfesoglou — Runtime Systems for Real-World Experiences";
 const description =
   "Director of Software building Unity and Unreal SDKs, native transports, connected-device systems, creative tooling, and production-ready real-time experiences.";
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://nonlin.github.io";
+const metadataBase = new URL(siteUrl);
+const socialImage = new URL("/og.png", metadataBase).toString();
 
-export async function generateMetadata(): Promise<Metadata> {
-  const incomingHeaders = await headers();
-  const host =
-    incomingHeaders.get("x-forwarded-host") ??
-    incomingHeaders.get("host") ??
-    "nonlin.github.io";
-  const protocol =
-    incomingHeaders.get("x-forwarded-proto") ??
-    (host.startsWith("localhost") || host.startsWith("127.0.0.1")
-      ? "http"
-      : "https");
-  const metadataBase = new URL(`${protocol}://${host}`);
-  const socialImage = new URL("/og.png", metadataBase).toString();
-
-  return {
+export const metadata: Metadata = {
   metadataBase,
   title: {
     default: title,
@@ -84,8 +73,7 @@ export async function generateMetadata(): Promise<Metadata> {
       "The software layer between strange hardware and believable worlds.",
     images: [socialImage],
   },
-  };
-}
+};
 
 export const viewport: Viewport = {
   width: "device-width",
