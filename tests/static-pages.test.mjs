@@ -13,6 +13,11 @@ test("exports a complete GitHub Pages portfolio", async () => {
   );
   assert.match(html, /https:\/\/nonlin\.github\.io\/og\.png/);
   assert.match(html, /george-erfesoglou-resume-2026\.pdf/);
+  assert.match(html, /Move the risk/);
+  assert.match(
+    html,
+    /oedigital\.com\/news\/460903-ensco-launches-continuous-tripping-technology/,
+  );
   assert.doesNotMatch(html, /Sign in required/);
 
   await Promise.all([

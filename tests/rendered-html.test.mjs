@@ -35,6 +35,11 @@ test("server-renders George Erfesoglou's portfolio", async () => {
   assert.match(html, /strange hardware/);
   assert.match(html, /Physical Boids/);
   assert.match(html, /Best in Show VR/);
+  assert.match(html, /Virtual equipment/);
+  assert.match(
+    html,
+    /oedigital\.com\/news\/460903-ensco-launches-continuous-tripping-technology/,
+  );
   assert.match(html, /george-erfesoglou-resume-2026\.pdf/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/i);
 });

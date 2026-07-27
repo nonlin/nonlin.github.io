@@ -529,17 +529,64 @@ export function Portfolio() {
               </article>
 
               <article className="case-study blueprint-case">
-                <div className="blueprint-visual" aria-hidden="true">
-                  <div className="blueprint-label">SIMULATION MAP / NOV</div>
-                  <span className="bp-node node-a">PLC</span>
-                  <span className="bp-node node-b">TOP DRIVE</span>
-                  <span className="bp-node node-c">DRAWWORKS</span>
-                  <span className="bp-node node-d">HMI</span>
-                  <span className="bp-line line-a" />
-                  <span className="bp-line line-b" />
-                  <span className="bp-line line-c" />
-                  <span className="bp-pulse" />
-                </div>
+                <figure
+                  className="commissioning-visual"
+                  aria-label="Virtual commissioning sequence from control logic to physical equipment"
+                >
+                  <figcaption className="commissioning-header">
+                    <span>VIRTUAL COMMISSIONING / NOV</span>
+                    <strong><i /> MODEL ONLINE</strong>
+                  </figcaption>
+                  <div className="commissioning-thesis">
+                    <span>FIND FAULTS EARLY</span>
+                    <strong>
+                      Move the risk.
+                      <em>Not the steel.</em>
+                    </strong>
+                  </div>
+                  <ol className="commissioning-flow">
+                    <li>
+                      <span className="flow-index">01</span>
+                      <span className="flow-copy">
+                        <small>SOURCE</small>
+                        <strong>Control logic</strong>
+                        <em>PLC commands + interlocks</em>
+                      </span>
+                      <span className="flow-state">INPUT</span>
+                    </li>
+                    <li className="flow-active">
+                      <span className="flow-index">02</span>
+                      <span className="flow-copy">
+                        <small>DIGITAL TWIN</small>
+                        <strong>Virtual equipment</strong>
+                        <em>10+ rig systems in simulation</em>
+                      </span>
+                      <span className="flow-state">RUN</span>
+                    </li>
+                    <li>
+                      <span className="flow-index">03</span>
+                      <span className="flow-copy">
+                        <small>VERIFY</small>
+                        <strong>Motion + fault tests</strong>
+                        <em>Integration issues surface here</em>
+                      </span>
+                      <span className="flow-state">CHECK</span>
+                    </li>
+                    <li>
+                      <span className="flow-index">04</span>
+                      <span className="flow-copy">
+                        <small>COMMISSION</small>
+                        <strong>Physical equipment</strong>
+                        <em>Only after the model passes</em>
+                      </span>
+                      <span className="flow-state">RELEASE</span>
+                    </li>
+                  </ol>
+                  <div className="commissioning-gate">
+                    <span>SIMULATION GATE</span>
+                    <strong>PASS <i>✓</i></strong>
+                  </div>
+                </figure>
                 <div className="case-body">
                   <div className="case-title-row">
                     <span className="case-number">03</span>
@@ -564,6 +611,20 @@ export function Portfolio() {
                       the cost of changing them was still measured in code, not
                       steel and downtime.
                     </p>
+                  </div>
+                  <div className="case-evidence">
+                    <p>
+                      External coverage of the wider automation program and its
+                      real-world deployment.
+                    </p>
+                    <ExternalLink
+                      className="evidence-link"
+                      href="https://www.oedigital.com/news/460903-ensco-launches-continuous-tripping-technology"
+                    >
+                      <span>RELATED INDUSTRY COVERAGE</span>
+                      <strong>Ensco launches Continuous Tripping Technology</strong>
+                      <small>OE Digital · Jan 2019</small>
+                    </ExternalLink>
                   </div>
                 </div>
               </article>
