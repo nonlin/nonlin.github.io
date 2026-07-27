@@ -16,6 +16,11 @@
   --cyan: #5fdaff;
   --coral: #ff8066;
   --mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --type-micro: 10px;
+  --type-label: 11px;
+  --type-caption: 12px;
+  --type-small-copy: 13px;
+  --type-evidence-link: 14px;
 }
 
 * {
@@ -251,7 +256,7 @@ p {
   max-height: calc(100vh - 124px);
   color: var(--ink-soft);
   font-family: var(--mono);
-  font-size: 12px;
+  font-size: var(--type-small-copy);
   line-height: 1.55;
 }
 
@@ -344,7 +349,7 @@ p {
   display: block;
   margin-bottom: 10px;
   color: var(--purple);
-  font-size: 10px;
+  font-size: var(--type-label);
   letter-spacing: 0.12em;
 }
 
@@ -373,7 +378,7 @@ p {
   display: flex;
   justify-content: space-between;
   margin-top: 8px;
-  font-size: 9px;
+  font-size: var(--type-label);
 }
 
 .rail-signoff {
@@ -636,7 +641,7 @@ h2 em {
 
 .signal-core span {
   color: var(--ink-dim);
-  font-size: 8px;
+  font-size: var(--type-micro);
 }
 
 .signal-core strong {
@@ -650,7 +655,7 @@ h2 em {
   position: absolute;
   color: var(--ink-dim);
   font-family: var(--mono);
-  font-size: 8px;
+  font-size: var(--type-micro);
 }
 
 .signal-label-a {
@@ -1036,7 +1041,7 @@ h2 em {
   gap: 15px;
   color: var(--ink-soft);
   font-family: var(--mono);
-  font-size: 9px;
+  font-size: var(--type-micro);
 }
 
 .boids-legend span {
@@ -1113,7 +1118,7 @@ h2 em {
   gap: 7px;
   white-space: nowrap;
   color: rgba(191, 238, 255, 0.72);
-  font-size: 9px;
+  font-size: var(--type-micro);
   font-weight: 500;
 }
 
@@ -1132,7 +1137,7 @@ h2 em {
 .commissioning-thesis > span {
   color: rgba(191, 238, 255, 0.52);
   font-family: var(--mono);
-  font-size: 9px;
+  font-size: var(--type-micro);
   letter-spacing: 0.13em;
 }
 
@@ -1223,7 +1228,7 @@ h2 em {
   background: #0d171e;
   color: var(--cyan);
   font-family: var(--mono);
-  font-size: 8px;
+  font-size: var(--type-micro);
 }
 
 .flow-copy {
@@ -1235,7 +1240,7 @@ h2 em {
 .flow-state {
   color: rgba(191, 238, 255, 0.5);
   font-family: var(--mono);
-  font-size: 8px;
+  font-size: var(--type-micro);
   letter-spacing: 0.12em;
 }
 
@@ -1244,7 +1249,7 @@ h2 em {
   margin-top: 2px;
   color: rgba(233, 248, 255, 0.92);
   font-family: var(--sans);
-  font-size: 12px;
+  font-size: var(--type-small-copy);
   font-weight: 600;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1278,7 +1283,7 @@ h2 em {
   padding-top: 18px;
   color: rgba(191, 238, 255, 0.5);
   font-family: var(--mono);
-  font-size: 9px;
+  font-size: var(--type-micro);
   letter-spacing: 0.12em;
 }
 
@@ -1321,7 +1326,7 @@ h2 em {
 .impact-note p {
   margin: 9px 0 0;
   color: var(--ink-dim);
-  font-size: 12px;
+  font-size: var(--type-small-copy);
   line-height: 1.55;
 }
 
@@ -1335,8 +1340,8 @@ h2 em {
   max-width: 52ch;
   margin: 0 0 11px;
   color: var(--ink-dim);
-  font-size: 11px;
-  line-height: 1.5;
+  font-size: var(--type-small-copy);
+  line-height: 1.55;
 }
 
 .evidence-link {
@@ -1351,7 +1356,7 @@ h2 em {
 .evidence-link > span:first-child {
   color: var(--cyan);
   font-family: var(--mono);
-  font-size: 9px;
+  font-size: var(--type-label);
   letter-spacing: 0.1em;
   grid-column: 1;
 }
@@ -1360,7 +1365,7 @@ h2 em {
   margin-top: 4px;
   border-bottom: 1px solid var(--line-strong);
   font-family: var(--sans);
-  font-size: 12px;
+  font-size: var(--type-evidence-link);
   font-weight: 600;
   grid-column: 1;
   transition: border-color 160ms ease;
@@ -1370,7 +1375,7 @@ h2 em {
   margin-top: 5px;
   color: var(--ink-dim);
   font-family: var(--mono);
-  font-size: 9px;
+  font-size: var(--type-label);
   grid-column: 1;
 }
 
@@ -1930,7 +1935,7 @@ h2 em {
     right: 14px;
     bottom: 11px;
     left: 14px;
-    font-size: 9px;
+    font-size: var(--type-micro);
   }
 
   .case-body,
