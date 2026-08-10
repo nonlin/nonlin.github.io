@@ -295,21 +295,47 @@ export function Portfolio() {
           <a href="#agents">agents</a>
           <a href="#proof">proof</a>
           <a href="#path">path</a>
-          <a href="#contact">connect</a>
         </nav>
 
-        <button
-          className="menu-button"
-          type="button"
-          aria-expanded={menuOpen}
-          aria-controls="mobile-navigation"
-          onClick={() => setMenuOpen((open) => !open)}
-        >
-          <span>{menuOpen ? "close" : "menu"}</span>
-          <span className="menu-glyph" aria-hidden="true">
-            {menuOpen ? "×" : "≡"}
-          </span>
-        </button>
+        <nav className="header-contact" aria-label="Contact links">
+          <a
+            className="header-social"
+            href="https://www.linkedin.com/in/george-erfesoglou-91617a87/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn <span aria-hidden="true">↗</span>
+          </a>
+          <a
+            className="header-social"
+            href="https://github.com/nonlin"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub <span aria-hidden="true">↗</span>
+          </a>
+          <a className="header-email" href="mailto:gerfeso@live.com">
+            Email me <span aria-hidden="true">↗</span>
+          </a>
+        </nav>
+
+        <div className="mobile-header-actions">
+          <a className="mobile-contact" href="mailto:gerfeso@live.com">
+            Email <span aria-hidden="true">↗</span>
+          </a>
+          <button
+            className="menu-button"
+            type="button"
+            aria-expanded={menuOpen}
+            aria-controls="mobile-navigation"
+            onClick={() => setMenuOpen((open) => !open)}
+          >
+            <span>{menuOpen ? "close" : "menu"}</span>
+            <span className="menu-glyph" aria-hidden="true">
+              {menuOpen ? "×" : "≡"}
+            </span>
+          </button>
+        </div>
 
         <nav
           className={`mobile-nav ${menuOpen ? "is-open" : ""}`}
@@ -322,6 +348,22 @@ export function Portfolio() {
               {section.label}
             </a>
           ))}
+          <div className="mobile-connect-links" aria-label="Social profiles">
+            <a
+              href="https://www.linkedin.com/in/george-erfesoglou-91617a87/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn <span aria-hidden="true">↗</span>
+            </a>
+            <a
+              href="https://github.com/nonlin"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub <span aria-hidden="true">↗</span>
+            </a>
+          </div>
         </nav>
       </header>
 

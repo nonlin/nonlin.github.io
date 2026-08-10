@@ -37,6 +37,9 @@ test("server-renders George Erfesoglou's portfolio", async () => {
   assert.match(html, /MISSION \/ OUTCOME-04/);
   assert.match(html, /75 automated tests/);
   assert.match(html, /UI TREE → ACTION → ASSERTION/);
+  assert.match(html, /aria-label="Contact links"/);
+  assert.match(html, /class="header-email" href="mailto:gerfeso@live.com"/);
+  assert.match(html, /class="mobile-contact" href="mailto:gerfeso@live.com"/);
   assert.match(html, /Physical Boids/);
   assert.match(html, /Best in Show VR/);
   assert.match(html, /Virtual equipment/);

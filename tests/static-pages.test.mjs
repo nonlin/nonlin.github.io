@@ -14,6 +14,8 @@ test("exports a complete GitHub Pages portfolio", async () => {
   assert.match(html, /https:\/\/nonlin\.github\.io\/og\.png/);
   assert.match(html, /Agents that can act/);
   assert.match(html, /CONTINUE \/ DONE \/ BLOCKED/);
+  assert.match(html, /aria-label="Contact links"/);
+  assert.match(html, /class="header-email" href="mailto:gerfeso@live.com"/);
   assert.match(html, /george-erfesoglou-resume-2026\.pdf/);
   assert.match(html, /Move the risk/);
   assert.match(
