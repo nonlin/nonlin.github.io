@@ -30,9 +30,13 @@ test("server-renders George Erfesoglou's portfolio", async () => {
   const html = await response.text();
   assert.match(
     html,
-    /<title>George Erfesoglou — Runtime Systems for Real-World Experiences<\/title>/i,
+    /<title>George Erfesoglou — Agentic Systems, Runtime QA &amp; Real-World Software<\/title>/i,
   );
   assert.match(html, /strange hardware/);
+  assert.match(html, /Agents that can act/);
+  assert.match(html, /MISSION \/ OUTCOME-04/);
+  assert.match(html, /75 automated tests/);
+  assert.match(html, /UI TREE → ACTION → ASSERTION/);
   assert.match(html, /Physical Boids/);
   assert.match(html, /Best in Show VR/);
   assert.match(html, /Virtual equipment/);

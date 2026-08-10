@@ -14,9 +14,10 @@ const workSans = Work_Sans({
   display: "swap",
 });
 
-const title = "George Erfesoglou — Runtime Systems for Real-World Experiences";
+const title =
+  "George Erfesoglou — Agentic Systems, Runtime QA & Real-World Software";
 const description =
-  "Director of Software building Unity and Unreal SDKs, native transports, connected-device systems, creative tooling, and production-ready real-time experiences.";
+  "Outcome engineer building agentic systems, runtime QA, simulation and evaluation workflows, connected-device software, and production-ready real-time experiences.";
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://nonlin.github.io";
 const metadataBase = new URL(siteUrl);
@@ -39,6 +40,12 @@ export const metadata: Metadata = {
     "C++",
     "C#",
     "real-time systems",
+    "agentic systems",
+    "outcome engineering",
+    "runtime QA",
+    "AI agents",
+    "vision-language models",
+    "simulation and evaluation",
   ],
   authors: [{ name: "George Erfesoglou", url: "https://github.com/nonlin" }],
   creator: "George Erfesoglou",
@@ -55,22 +62,20 @@ export const metadata: Metadata = {
     url: metadataBase,
     siteName: "George Erfesoglou",
     title,
-    description:
-      "The software layer between strange hardware and believable worlds.",
+    description: "Agents that can act. Evidence that can say no.",
     images: [
       {
         url: socialImage,
-        width: 1735,
-        height: 906,
-        alt: "George Erfesoglou — Runtime Systems for Real-World Experiences",
+        width: 1731,
+        height: 909,
+        alt: "George Erfesoglou — Agentic Systems, Runtime QA and Real-World Software",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title,
-    description:
-      "The software layer between strange hardware and believable worlds.",
+    description: "Agents that can act. Evidence that can say no.",
     images: [socialImage],
   },
 };

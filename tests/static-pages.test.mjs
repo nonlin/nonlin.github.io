@@ -9,9 +9,11 @@ test("exports a complete GitHub Pages portfolio", async () => {
 
   assert.match(
     html,
-    /George Erfesoglou — Runtime Systems for Real-World Experiences/,
+    /George Erfesoglou — Agentic Systems, Runtime QA &amp; Real-World Software/,
   );
   assert.match(html, /https:\/\/nonlin\.github\.io\/og\.png/);
+  assert.match(html, /Agents that can act/);
+  assert.match(html, /CONTINUE \/ DONE \/ BLOCKED/);
   assert.match(html, /george-erfesoglou-resume-2026\.pdf/);
   assert.match(html, /Move the risk/);
   assert.match(
