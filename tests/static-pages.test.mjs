@@ -9,7 +9,7 @@ test("exports a complete GitHub Pages portfolio", async () => {
 
   assert.match(
     html,
-    /George Erfesoglou — Agentic Systems, Runtime QA &amp; Real-World Software/,
+    /George Erfesoglou — Runtime Systems, Simulation &amp; Agentic QA/,
   );
   assert.match(html, /https:\/\/nonlin\.github\.io\/og\.png/);
   assert.match(html, /Agents that can act/);
@@ -18,6 +18,9 @@ test("exports a complete GitHub Pages portfolio", async () => {
   assert.match(html, /class="header-email" href="mailto:gerfeso@live.com"/);
   assert.match(html, /george-erfesoglou-resume-2026\.pdf/);
   assert.match(html, /Move the risk/);
+  assert.match(html, /Multi-million-dollar commissioning risk avoided/);
+  assert.doesNotMatch(html, /From scene understanding to controlled physical output/);
+  assert.doesNotMatch(html, /vision-feature|vision-flow/);
   assert.match(
     html,
     /oedigital\.com\/news\/460903-ensco-launches-continuous-tripping-technology/,

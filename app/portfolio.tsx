@@ -399,16 +399,17 @@ export function Portfolio() {
 
               <div className="hero-copy">
                 <p className="eyebrow">
-                  Outcome Engineer · agentic systems · real-world software
+                  Director of Software · runtime systems · agentic QA
                 </p>
                 <h1 id="hero-title">
                   I build the software layer between{" "}
                   <em>strange hardware</em> and believable worlds.
                 </h1>
                 <p className="hero-deck">
-                  I build systems where AI agents can inspect, operate, test,
-                  and improve real software and hardware—with explicit evidence
-                  deciding when the work is actually done.
+                  I turn prototypes into systems people can actually ship:
+                  Unity and Unreal SDKs, industrial simulation, native
+                  transports, connected-device tooling, and evidence-driven
+                  automation that makes the whole stack more reliable.
                 </p>
 
                 <div className="hero-actions">
@@ -460,8 +461,9 @@ export function Portfolio() {
                 </h2>
                 <p>
                   My best work lives in the seams: where engine code meets
-                  platform APIs, where a clean editor workflow meets unruly
-                  hardware, and where a demo has to survive a real show floor.
+                  platform APIs, where control logic meets virtual equipment,
+                  where a clean editor workflow meets unruly hardware, and
+                  where a demo has to survive a real show floor.
                 </p>
               </header>
 
@@ -831,51 +833,6 @@ export function Portfolio() {
                 </div>
               </article>
 
-              <article className="vision-feature">
-                <div className="vision-copy">
-                  <div className="scope-tags" aria-label="Project scope">
-                    <span>R&amp;D SYSTEM</span>
-                    <span>LOCAL INFERENCE</span>
-                  </div>
-                  <p className="eyebrow">VISION-LANGUAGE SIDECAR / CUDA</p>
-                  <h3>From scene understanding to controlled physical output.</h3>
-                  <p>
-                    A local vision-language model interprets a live scene, then
-                    priority, stability, and safety logic turns that reading into
-                    bounded scent output. The system includes guarded input,
-                    CUDA and VRAM checks, persistent intensity controls, cleanup,
-                    launcher preflight, and 75 automated tests.
-                  </p>
-                </div>
-                <div
-                  className="vision-flow"
-                  aria-label="Scene to local vision-language model to stability gate to scent device"
-                >
-                  <div>
-                    <span>01</span>
-                    <strong>SCENE</strong>
-                    <small>live visual state</small>
-                  </div>
-                  <i aria-hidden="true">→</i>
-                  <div>
-                    <span>02</span>
-                    <strong>LOCAL VLM</strong>
-                    <small>scene interpretation</small>
-                  </div>
-                  <i aria-hidden="true">→</i>
-                  <div className="vision-gate">
-                    <span>03</span>
-                    <strong>STABILITY GATE</strong>
-                    <small>priority + safeguards</small>
-                  </div>
-                  <i aria-hidden="true">→</i>
-                  <div className="vision-output">
-                    <span>04</span>
-                    <strong>SCENT</strong>
-                    <small>controlled output</small>
-                  </div>
-                </div>
-              </article>
             </section>
 
             <section className="section" id="proof" aria-labelledby="proof-title">
@@ -976,44 +933,44 @@ export function Portfolio() {
               <header className="section-heading">
                 <p className="section-index">04 / OPERATING PRINCIPLES</p>
                 <h2 id="approach-title">
-                  Autonomy is useful when the system can{" "}
-                  <em>prove what happened.</em>
+                  I stay with the problem until it becomes{" "}
+                  <em>boringly reliable.</em>
                 </h2>
               </header>
 
               <blockquote className="working-quote">
                 <span aria-hidden="true">“</span>
-                The agent is not the authority. The contract defines the work,
-                observation exposes reality, and evidence decides whether the
-                result can move forward.
+                The interesting part is rarely making the happy path work once.
+                It is making the whole system understandable when the device
+                disappears, the platform behaves differently, or the demo
+                starts in five minutes.
               </blockquote>
 
               <div className="principles">
                 <article>
                   <span>01</span>
-                  <h3>Give the agent a bounded contract.</h3>
+                  <h3>Cross the boundary.</h3>
                   <p>
-                    State the prerequisites, permitted scope, required
-                    artifacts, measurable success criteria, and stop controls
-                    before execution begins.
+                    I do not stop at the engine API. I trace behavior through
+                    native platform code, firmware messages, packaging, and the
+                    physical device.
                   </p>
                 </article>
                 <article>
                   <span>02</span>
-                  <h3>Make observation first-class.</h3>
+                  <h3>Design for the next developer.</h3>
                   <p>
-                    UI trees, logs, screenshots, exact timestamps, and hardware
-                    state let the system inspect reality before deciding what to
-                    do next.
+                    Clear contracts, useful editor tooling, actionable errors,
+                    and documentation turn a clever integration into a platform.
                   </p>
                 </article>
                 <article>
                   <span>03</span>
-                  <h3>Let evidence block promotion.</h3>
+                  <h3>Make failure observable.</h3>
                   <p>
-                    Assertions, controls, and saved artifacts can return done,
-                    continue, or blocked. A plausible narrative never outranks
-                    the result.
+                    Request traces, bounded retries, lifecycle state, and
+                    hardware-in-the-loop tests make hard bugs reproducible
+                    instead of mysterious.
                   </p>
                 </article>
               </div>
@@ -1122,7 +1079,7 @@ export function Portfolio() {
             </section>
 
             <footer className="site-footer">
-              <p>No AI theater. Every claim needs an artifact.</p>
+              <p>Designed around real work. No buzzword rendering pipeline.</p>
               <p>George Erfesoglou · Houston, Texas · 2026</p>
             </footer>
           </div>
@@ -1131,14 +1088,14 @@ export function Portfolio() {
             <div className="rail-block">
               <span className="rail-label">NOW</span>
               <p>
-                Building agent loops with context, tools, simulation, and
-                verifiable outcomes.
+                Building the connective tissue between engines, native
+                platforms, simulation, agents, and physical products.
               </p>
             </div>
             <div className="rail-block">
               <span className="rail-label">FOCUS</span>
-              <p>Agentic orchestration</p>
-              <p>Runtime QA</p>
+              <p>Runtime systems</p>
+              <p>Engine integration</p>
               <p>Simulation + evaluation</p>
               <p>Connected devices</p>
             </div>
@@ -1151,10 +1108,10 @@ export function Portfolio() {
                 <i style={{ "--level": "66%" } as React.CSSProperties} />
               </div>
               <div className="stack-labels">
-                <span>agent</span>
-                <span>context</span>
+                <span>engine</span>
+                <span>native</span>
+                <span>device</span>
                 <span>evidence</span>
-                <span>runtime</span>
               </div>
             </div>
             <div className="rail-signoff">

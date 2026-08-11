@@ -15,9 +15,9 @@ const workSans = Work_Sans({
 });
 
 const title =
-  "George Erfesoglou — Agentic Systems, Runtime QA & Real-World Software";
+  "George Erfesoglou — Runtime Systems, Simulation & Agentic QA";
 const description =
-  "Outcome engineer building agentic systems, runtime QA, simulation and evaluation workflows, connected-device software, and production-ready real-time experiences.";
+  "Director of Software building Unity and Unreal SDKs, industrial simulation, native transports, connected-device systems, and evidence-driven agentic QA.";
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://nonlin.github.io";
 const metadataBase = new URL(siteUrl);
@@ -62,20 +62,22 @@ export const metadata: Metadata = {
     url: metadataBase,
     siteName: "George Erfesoglou",
     title,
-    description: "Agents that can act. Evidence that can say no.",
+    description:
+      "Real-time systems, industrial simulation, connected devices, and agentic QA built around evidence.",
     images: [
       {
         url: socialImage,
         width: 1731,
         height: 909,
-        alt: "George Erfesoglou — Agentic Systems, Runtime QA and Real-World Software",
+        alt: "George Erfesoglou — Runtime Systems, Simulation and Agentic QA",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title,
-    description: "Agents that can act. Evidence that can say no.",
+    description:
+      "Real-time systems, industrial simulation, connected devices, and agentic QA built around evidence.",
     images: [socialImage],
   },
 };
