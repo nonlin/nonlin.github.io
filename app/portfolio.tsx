@@ -11,6 +11,50 @@ const sections = [
   { id: "contact", label: "Start a conversation" },
 ];
 
+const rangeGroups = [
+  {
+    label: "EXPERIENCE ACROSS",
+    items: [
+      "Real-time systems",
+      "Industrial simulation",
+      "Connected products",
+      "Agentic tooling",
+      "Runtime QA",
+    ],
+  },
+  {
+    label: "DELIVERY RANGE",
+    items: ["SDK to device", "Prototype to deployment"],
+  },
+  {
+    label: "PLATFORM RANGE",
+    items: [
+      "Desktop · mobile · edge",
+      "Windows · macOS · Linux",
+      "iOS · Android",
+    ],
+  },
+];
+
+function RangeSummary() {
+  return (
+    <div className="range-summary">
+      {rangeGroups.map((group) => (
+        <section className="range-group" key={group.label}>
+          <span className="rail-label">{group.label}</span>
+          <div className="range-items">
+            {group.items.map((item) => (
+              <span className="range-item" key={item}>
+                {item}
+              </span>
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
+  );
+}
+
 type Boid = {
   x: number;
   y: number;
@@ -452,6 +496,11 @@ export function Portfolio() {
                 </div>
               </div>
             </section>
+
+            <aside className="mobile-range" aria-label="At a glance">
+              <span className="range-kicker">AT A GLANCE</span>
+              <RangeSummary />
+            </aside>
 
             <section className="section" id="work" aria-labelledby="work-title">
               <header className="section-heading">
@@ -1085,24 +1134,8 @@ export function Portfolio() {
           </div>
 
           <aside className="right-rail" aria-label="At a glance">
-            <div className="rail-block">
-              <span className="rail-label">EXPERIENCE ACROSS</span>
-              <p>Real-time experiences</p>
-              <p>Industrial simulation</p>
-              <p>Connected products</p>
-              <p>Agentic tooling + runtime QA</p>
-            </div>
-            <div className="rail-block">
-              <span className="rail-label">DELIVERY RANGE</span>
-              <p>Engine SDK → native layer → device</p>
-              <p>Prototype → production → deployment</p>
-            </div>
-            <div className="rail-block">
-              <span className="rail-label">PLATFORM RANGE</span>
-              <p>Desktop · mobile · edge</p>
-              <p>Windows · macOS · Linux</p>
-              <p>iOS · Android</p>
-            </div>
+            <span className="range-kicker">AT A GLANCE</span>
+            <RangeSummary />
           </aside>
         </div>
       </main>
