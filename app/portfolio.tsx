@@ -12,6 +12,9 @@ const sections = [
 ];
 
 const workPlaylistUrl =
+  "https://www.youtube.com/playlist?list=PLS8Hvk0czfRpVleuLEnf8RCfGXgZLQrch";
+
+const paxDemoUrl =
   "https://www.youtube.com/watch?v=uxg9X7YQ598&list=PLkH17iOut64HeWTIJMsfctr0DD_tluakG";
 
 const rangeGroups = [
@@ -943,7 +946,7 @@ export function Portfolio() {
                 </ExternalLink>
                 <ExternalLink
                   className="proof-card"
-                  href={workPlaylistUrl}
+                  href={paxDemoUrl}
                 >
                   <span className="proof-year">2026</span>
                   <strong>PAX: scent in real games</strong>

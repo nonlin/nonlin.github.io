@@ -21,6 +21,10 @@ test("exports a complete GitHub Pages portfolio", async () => {
   assert.match(html, /Work playlist/);
   assert.match(
     html,
+    /youtube\.com\/playlist\?list=PLS8Hvk0czfRpVleuLEnf8RCfGXgZLQrch/,
+  );
+  assert.match(
+    html,
     /youtube\.com\/watch\?v=uxg9X7YQ598(?:&|&amp;)list=PLkH17iOut64HeWTIJMsfctr0DD_tluakG/,
   );
   assert.match(html, /class="header-email" href="mailto:gerfeso@live.com"/);
