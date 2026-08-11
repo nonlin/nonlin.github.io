@@ -11,6 +11,9 @@ const sections = [
   { id: "contact", label: "Start a conversation" },
 ];
 
+const workPlaylistUrl =
+  "https://www.youtube.com/watch?v=uxg9X7YQ598&list=PLkH17iOut64HeWTIJMsfctr0DD_tluakG";
+
 const rangeGroups = [
   {
     label: "EXPERIENCE ACROSS",
@@ -343,6 +346,15 @@ export function Portfolio() {
 
         <nav className="header-contact" aria-label="Contact links">
           <a
+            className="header-social header-playlist"
+            href={workPlaylistUrl}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Watch selected work on YouTube"
+          >
+            Work playlist <span aria-hidden="true">↗</span>
+          </a>
+          <a
             className="header-social"
             href="https://www.linkedin.com/in/george-erfesoglou-91617a87/"
             target="_blank"
@@ -393,6 +405,15 @@ export function Portfolio() {
             </a>
           ))}
           <div className="mobile-connect-links" aria-label="Social profiles">
+            <a
+              className="mobile-playlist-link"
+              href={workPlaylistUrl}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Watch selected work on YouTube"
+            >
+              Work playlist <span aria-hidden="true">↗</span>
+            </a>
             <a
               href="https://www.linkedin.com/in/george-erfesoglou-91617a87/"
               target="_blank"
@@ -922,7 +943,7 @@ export function Portfolio() {
                 </ExternalLink>
                 <ExternalLink
                   className="proof-card"
-                  href="https://www.youtube.com/watch?v=uxg9X7YQ598&list=PLkH17iOut64HeWTIJMsfctr0DD_tluakG"
+                  href={workPlaylistUrl}
                 >
                   <span className="proof-year">2026</span>
                   <strong>PAX: scent in real games</strong>

@@ -53,6 +53,14 @@ test("server-renders George Erfesoglou's portfolio", async () => {
   assert.doesNotMatch(html, /From scene understanding to controlled physical output/);
   assert.doesNotMatch(html, /vision-feature|vision-flow/);
   assert.match(html, /aria-label="Contact links"/);
+  assert.match(html, /class="header-social header-playlist"/);
+  assert.match(html, /class="mobile-playlist-link"/);
+  assert.match(html, /Watch selected work on YouTube/);
+  assert.match(html, /Work playlist/);
+  assert.match(
+    html,
+    /youtube\.com\/watch\?v=uxg9X7YQ598(?:&|&amp;)list=PLkH17iOut64HeWTIJMsfctr0DD_tluakG/,
+  );
   assert.match(html, /class="header-email" href="mailto:gerfeso@live.com"/);
   assert.match(html, /class="mobile-contact" href="mailto:gerfeso@live.com"/);
   assert.match(html, /Physical Boids/);

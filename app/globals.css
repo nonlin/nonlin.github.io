@@ -257,6 +257,24 @@ p {
   color: var(--ink);
 }
 
+.header-playlist {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--ink);
+}
+
+.header-playlist::before {
+  color: var(--lime);
+  content: "▶";
+  font-size: 8px;
+  line-height: 1;
+}
+
+.header-playlist span {
+  color: var(--lime);
+}
+
 .header-email,
 .mobile-contact {
   display: inline-flex;
@@ -2289,6 +2307,23 @@ h2 em {
     padding: 0;
     color: var(--lime);
     font-size: var(--type-caption);
+  }
+
+  .mobile-connect-links .mobile-playlist-link {
+    grid-column: 1 / -1;
+    min-height: 44px;
+    border-color: rgba(198, 255, 122, 0.42);
+    background:
+      linear-gradient(90deg, rgba(198, 255, 122, 0.09), transparent 58%),
+      rgba(23, 22, 29, 0.62);
+    color: var(--ink);
+  }
+
+  .mobile-connect-links .mobile-playlist-link::before {
+    margin-right: 8px;
+    color: var(--lime);
+    content: "▶";
+    font-size: 9px;
   }
 
   .page-grid {
