@@ -394,8 +394,8 @@ p {
 .right-rail {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  text-align: right;
+  gap: 26px;
+  text-align: left;
 }
 
 .rail-block {
@@ -413,59 +413,8 @@ p {
 
 .rail-block p {
   margin-bottom: 5px;
-}
-
-.stack-signal {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 5px;
-  margin-top: 14px;
-}
-
-.stack-signal i {
-  display: block;
-  width: var(--level);
-  height: 3px;
-  border-radius: 100px;
-  background: linear-gradient(90deg, transparent, var(--cyan));
-  box-shadow: 0 0 8px rgba(95, 218, 255, 0.22);
-}
-
-.stack-labels {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 8px;
-  font-size: var(--type-label);
-}
-
-.rail-signoff {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 7px;
   color: var(--ink-soft);
-}
-
-.pulse-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--lime);
-  box-shadow: 0 0 0 0 rgba(198, 255, 122, 0.5);
-  animation: signal-pulse 2.4s infinite;
-}
-
-@keyframes signal-pulse {
-  0% {
-    box-shadow: 0 0 0 0 rgba(198, 255, 122, 0.5);
-  }
-  65% {
-    box-shadow: 0 0 0 8px rgba(198, 255, 122, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(198, 255, 122, 0);
-  }
+  line-height: 1.5;
 }
 
 .content-column {

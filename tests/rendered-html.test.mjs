@@ -39,6 +39,10 @@ test("server-renders George Erfesoglou's portfolio", async () => {
   assert.match(html, /UI TREE → ACTION → ASSERTION/);
   assert.match(html, /Multi-million-dollar commissioning risk avoided/);
   assert.match(html, /control logic meets virtual equipment/);
+  assert.match(html, /EXPERIENCE ACROSS/);
+  assert.match(html, /Agentic tooling \+ runtime QA/);
+  assert.match(html, /Windows · macOS · Linux/);
+  assert.doesNotMatch(html, /STACK SIGNAL|signal is live|stack-signal/);
   assert.doesNotMatch(html, /From scene understanding to controlled physical output/);
   assert.doesNotMatch(html, /vision-feature|vision-flow/);
   assert.match(html, /aria-label="Contact links"/);

@@ -1086,37 +1086,22 @@ export function Portfolio() {
 
           <aside className="right-rail" aria-label="At a glance">
             <div className="rail-block">
-              <span className="rail-label">NOW</span>
-              <p>
-                Building the connective tissue between engines, native
-                platforms, simulation, agents, and physical products.
-              </p>
+              <span className="rail-label">EXPERIENCE ACROSS</span>
+              <p>Real-time experiences</p>
+              <p>Industrial simulation</p>
+              <p>Connected products</p>
+              <p>Agentic tooling + runtime QA</p>
             </div>
             <div className="rail-block">
-              <span className="rail-label">FOCUS</span>
-              <p>Runtime systems</p>
-              <p>Engine integration</p>
-              <p>Simulation + evaluation</p>
-              <p>Connected devices</p>
+              <span className="rail-label">DELIVERY RANGE</span>
+              <p>Engine SDK → native layer → device</p>
+              <p>Prototype → production → deployment</p>
             </div>
             <div className="rail-block">
-              <span className="rail-label">STACK SIGNAL</span>
-              <div className="stack-signal">
-                <i style={{ "--level": "94%" } as React.CSSProperties} />
-                <i style={{ "--level": "88%" } as React.CSSProperties} />
-                <i style={{ "--level": "79%" } as React.CSSProperties} />
-                <i style={{ "--level": "66%" } as React.CSSProperties} />
-              </div>
-              <div className="stack-labels">
-                <span>engine</span>
-                <span>native</span>
-                <span>device</span>
-                <span>evidence</span>
-              </div>
-            </div>
-            <div className="rail-signoff">
-              <span className="pulse-dot" aria-hidden="true" />
-              signal is live
+              <span className="rail-label">PLATFORM RANGE</span>
+              <p>Desktop · mobile · edge</p>
+              <p>Windows · macOS · Linux</p>
+              <p>iOS · Android</p>
             </div>
           </aside>
         </div>

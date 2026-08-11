@@ -19,6 +19,10 @@ test("exports a complete GitHub Pages portfolio", async () => {
   assert.match(html, /george-erfesoglou-resume-2026\.pdf/);
   assert.match(html, /Move the risk/);
   assert.match(html, /Multi-million-dollar commissioning risk avoided/);
+  assert.match(html, /EXPERIENCE ACROSS/);
+  assert.match(html, /Agentic tooling \+ runtime QA/);
+  assert.match(html, /Windows · macOS · Linux/);
+  assert.doesNotMatch(html, /STACK SIGNAL|signal is live|stack-signal/);
   assert.doesNotMatch(html, /From scene understanding to controlled physical output/);
   assert.doesNotMatch(html, /vision-feature|vision-flow/);
   assert.match(
